@@ -1,0 +1,92 @@
+<header>
+  <nav
+    class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow-dark mb-3 bg-light "
+  >
+  
+    <div class="container">
+     
+      <img src="https://img.icons8.com/dusk/50/000000/book-shelf.png"/>
+      <h1 class="navbar-brand" [routerLink]="['/']"> Thư viện của bạn</h1>
+      
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+                aria-label="Toggle navigation"
+                [attr.aria-expanded]="isExpanded"
+                (click)="toggle()"
+                
+              >
+                 <span class="navbar-toggler-icon"></span>
+              </button>
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
+        [ngClass]="{ show: isExpanded }"
+      >
+        <ul class="navbar-nav flex-grow">
+
+          <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+          </li>
+       
+        
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/sach']"
+              >Sách</a
+            >
+          </li>
+        
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/docgia']"
+              >Độc giả</a
+            >
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/theloai']"
+              >Thể Loại</a
+            >
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/thethuvien']"
+              >Thẻ Thư Viện</a
+            >
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/tacgia']"
+              >Tác Giả</a
+            >
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/muontra']"
+              >Mượn trả</a
+            >
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/ctmuontra']"
+              >Chi tiết mượn trả</a
+            >
+          </li>
+
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="header">
+    <h3 style="background-color:rgba(223, 223, 223, 0.212);">THƯ VIỆN QUỐC GIA <br/>Văn hóa - Giáo dục - Thông tin - Giải trí </h3>
+  
+    
+  </div>
+
+</header>
+
+
+
+ 
+  
+ 

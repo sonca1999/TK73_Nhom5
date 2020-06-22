@@ -1,0 +1,77 @@
+<h1 id="tableLabel">CHI TIẾT MƯỢN TRẢ</h1>
+
+<p *ngIf="!ctmuontra"><em>Loading...</em></p>
+<button class ="btn btn-primary" (click)="openModal(true,null)">Tạo chi tiết mượn trả mới</button>
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="ctmuontra.totalRecord>0">
+  <thead>
+    <tr>
+      <th>Mã Sách</th>
+      <th>Mã Mượn Trả</th>
+      <th>Đã Trả</th>
+      <th>Ngày Trả</th>
+      <th>Hành Động</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let s of ctmuontra.data; index as i;">
+      <td>{{ s.maSach }}</td>
+      <td>{{ s.maMt }}</td>
+      <td>{{ s.daTra }}</td>
+      <td>{{ s.ngaytra |date: "dd-MM-yyyy" }}</td>
+      <td>
+        <button class ="btn btn-info btm-sm" (click)="openModal(false,i)">Sửa</button>
+        <button class ="btn btn-danger btm-sm" (click)="deleteCtmuontra(i)">Xóa</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<ul class="pagination">
+    <li class="page-item">
+        <a class="page-link" href="javascript:void(0);" (click)="searchPrevious()">Truớc</a>
+    </li>
+    <li class="page-item"><a class="page-link">{{ctmuontra.page}}</a></li>
+    <li class="page-item">
+        <a class="page-link" href="javascript:void(0);" (click)="searchNext()">Sau</a>
+    </li>
+</ul>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Chi tiết mượn trả</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-4">Mã Sách</div>
+          <div class ="col-8"><input class="form-control" [(ngModel)]="ctmuontra1.maSach"></div>
+        </div>
+      <br/>
+          <div class="row">
+            <div class="col-4">Mã Mượn Trả</div>
+            <div class ="col-8"><input class="form-control" type="number" [(ngModel)]="ctmuontra1.maMt"></div>
+        </div>
+      <br/>
+        <div class="row"> 
+          <div class="col-4">Đã Trả</div>
+          <div class ="col-8"><input class="form-control" [(ngModel)]="ctmuontra1.daTra"></div> 
+        </div>
+      <br/>
+        <div class="row"> 
+          <div class="col-4">Ngày Trả</div>
+          <div class ="col-8"><input class="form-control" type="date" [(ngModel)]="ctmuontra1.ngaytra"></div> 
+        </div>
+      
+      
+      <br/>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+        <button type="button" class="btn btn-primary" (click)="updatectmuontra()">Lưu</button>
+        <button type="button" class="btn btn-success" (click)="addctmuontra()">Tạo</button>
+      </div>
+    </div>
+  </div>
+</div>

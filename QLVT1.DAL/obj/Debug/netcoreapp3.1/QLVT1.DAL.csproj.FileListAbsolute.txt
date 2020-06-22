@@ -1,0 +1,45 @@
+D:\Cuatui\New folder (2)\QLTV1\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLVT1.DAL.deps.json
+D:\Cuatui\New folder (2)\QLTV1\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLVT1.DAL.dll
+D:\Cuatui\New folder (2)\QLTV1\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.AssemblyInfoInputs.cache
+D:\Cuatui\New folder (2)\QLTV1\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.AssemblyInfo.cs
+D:\Cuatui\New folder (2)\QLTV1\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.csprojAssemblyReference.cache
+D:\Cuatui\New folder (2)\QLTV1\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLVT1.DAL.runtimeconfig.json
+D:\Cuatui\New folder (2)\QLTV1\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLVT1.DAL.runtimeconfig.dev.json
+D:\Cuatui\New folder (2)\QLTV1\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLVT1.DAL.pdb
+D:\Cuatui\New folder (2)\QLTV1\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.dll
+D:\Cuatui\New folder (2)\QLTV1\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.pdb
+D:\Cuatui\New folder (2)\QLTV1\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.genruntimeconfig.cache
+D:\Cuatui\New folder (2)\QLTV1\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLTV1.Common.dll
+D:\Cuatui\New folder (2)\QLTV1\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLTV1.Common.pdb
+D:\Cuatui\New folder (2)\QLTV1\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.csproj.CopyComplete
+D:\Cuatui\New folder (2)\QLTV1\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Xiu Beoo\Downloads\demoQLTV-master\demoQLTV-master\QLTV1\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLVT1.DAL.deps.json
+C:\Users\Xiu Beoo\Downloads\demoQLTV-master\demoQLTV-master\QLTV1\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLVT1.DAL.runtimeconfig.json
+C:\Users\Xiu Beoo\Downloads\demoQLTV-master\demoQLTV-master\QLTV1\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLVT1.DAL.runtimeconfig.dev.json
+C:\Users\Xiu Beoo\Downloads\demoQLTV-master\demoQLTV-master\QLTV1\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLVT1.DAL.dll
+C:\Users\Xiu Beoo\Downloads\demoQLTV-master\demoQLTV-master\QLTV1\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLVT1.DAL.pdb
+C:\Users\Xiu Beoo\Downloads\demoQLTV-master\demoQLTV-master\QLTV1\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLTV1.Common.dll
+C:\Users\Xiu Beoo\Downloads\demoQLTV-master\demoQLTV-master\QLTV1\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLTV1.Common.pdb
+C:\Users\Xiu Beoo\Downloads\demoQLTV-master\demoQLTV-master\QLTV1\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.csprojAssemblyReference.cache
+C:\Users\Xiu Beoo\Downloads\demoQLTV-master\demoQLTV-master\QLTV1\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.AssemblyInfoInputs.cache
+C:\Users\Xiu Beoo\Downloads\demoQLTV-master\demoQLTV-master\QLTV1\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.AssemblyInfo.cs
+C:\Users\Xiu Beoo\Downloads\demoQLTV-master\demoQLTV-master\QLTV1\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Xiu Beoo\Downloads\demoQLTV-master\demoQLTV-master\QLTV1\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.csproj.CopyComplete
+C:\Users\Xiu Beoo\Downloads\demoQLTV-master\demoQLTV-master\QLTV1\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.dll
+C:\Users\Xiu Beoo\Downloads\demoQLTV-master\demoQLTV-master\QLTV1\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.pdb
+C:\Users\Xiu Beoo\Downloads\demoQLTV-master\demoQLTV-master\QLTV1\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.genruntimeconfig.cache
+C:\Users\Xiu Beoo\Desktop\TK73_Nhom5\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLVT1.DAL.deps.json
+C:\Users\Xiu Beoo\Desktop\TK73_Nhom5\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLVT1.DAL.runtimeconfig.json
+C:\Users\Xiu Beoo\Desktop\TK73_Nhom5\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLVT1.DAL.runtimeconfig.dev.json
+C:\Users\Xiu Beoo\Desktop\TK73_Nhom5\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLVT1.DAL.dll
+C:\Users\Xiu Beoo\Desktop\TK73_Nhom5\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLVT1.DAL.pdb
+C:\Users\Xiu Beoo\Desktop\TK73_Nhom5\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLTV1.Common.dll
+C:\Users\Xiu Beoo\Desktop\TK73_Nhom5\QLVT1.DAL\bin\Debug\netcoreapp3.1\QLTV1.Common.pdb
+C:\Users\Xiu Beoo\Desktop\TK73_Nhom5\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.csprojAssemblyReference.cache
+C:\Users\Xiu Beoo\Desktop\TK73_Nhom5\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.AssemblyInfoInputs.cache
+C:\Users\Xiu Beoo\Desktop\TK73_Nhom5\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.AssemblyInfo.cs
+C:\Users\Xiu Beoo\Desktop\TK73_Nhom5\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Xiu Beoo\Desktop\TK73_Nhom5\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.csproj.CopyComplete
+C:\Users\Xiu Beoo\Desktop\TK73_Nhom5\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.dll
+C:\Users\Xiu Beoo\Desktop\TK73_Nhom5\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.pdb
+C:\Users\Xiu Beoo\Desktop\TK73_Nhom5\QLVT1.DAL\obj\Debug\netcoreapp3.1\QLVT1.DAL.genruntimeconfig.cache

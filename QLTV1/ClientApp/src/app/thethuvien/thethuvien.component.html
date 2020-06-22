@@ -1,0 +1,78 @@
+<h1 id="tableLabel">THẺ THƯ VIỆN</h1>
+
+
+
+<p *ngIf="!thethuvien"><em>Loading...</em></p>
+
+<button class="btn btn-primary" (click)="openModal(true,null)">Tạo thẻ thư viện mới</button>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="thethuvien.totalRecord>0">
+  <thead>
+    <tr>
+      <th>Mã Thẻ</th>
+      <th>Ngày Bắt Đầu</th>
+      <th>Ngày Hết Hạn</th>
+      <th>Ghi Chú</th>
+      <th>Hành Động</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let d of thethuvien.data; index as i;">
+      <td>{{ d.maThe }}</td>
+      <td>{{ d.ngayBd | date: "dd-MM-yyyy" }}</td>
+      <td>{{ d.ngayHh | date: "dd-MM-yyyy"}}</td>
+      <td>{{ d.ghiChu }}</td>
+      <td>
+        <button class="btn btn-info btm-sm" (click)="openModal(false,i)">Sửa</button>
+        <button class="btn btn-danger btm-sm" (click)="deleteThethuvien(i)">Xóa</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="javascript:void(0);" (click)="searchPrevious()">Trước</a></li>
+    <li class="page-item"><a class="page-link" >{{thethuvien.page}}</a></li>
+    <li class="page-item"><a class="page-link" href="javascript:void(0);" (click)="searchNext()">Sau</a></li>
+  </ul>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" *ngIf="!isEdit" id="exampleModalLabel">Tạo thẻ thư viện mới</h5>
+          <h5 class="modal-title" *ngIf="isEdit" id="exampleModalLabel">Sửa thông tin thẻ thư viện</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row" *ngIf="isEdit">
+            <div class="col-4">Mã Thẻ Thư Viện</div>
+            <div class="col-8"><input class="form-control" type="number" [(ngModel)] = "thethuvien1.maThe"></div>
+          </div>
+          <br/>
+          <div class="row">
+            <div class="col-4">Ngày Bắt Đầu</div>
+            <div class="col-8"><input class="form-control"  Type="datetime-local" [(ngModel)] = "thethuvien1.ngayBd"></div>
+          </div>
+          <br/>
+          <div class="row">
+            <div class="col-4">Ngày Hết Hạn</div>
+            <div class="col-8"><input class="form-control"  Type="datetime-local" [(ngModel)] = "thethuvien1.ngayHh"></div>
+          </div>
+          <br/>
+          <div class="row">
+            <div class="col-4">Ghi Chú</div>
+            <div class="col-8"><input class="form-control" type="text" [(ngModel)] = "thethuvien1.ghiChu"></div>
+          </div>
+          <br/>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+          <button type="button" class="btn btn-primary" (click)="updateThethuvien()">Lưu</button>
+          <button type="button" class="btn btn-success" (click)="addThethuvien()">Tạo</button>
+        </div>
+      </div>
+    </div>
+  </div>

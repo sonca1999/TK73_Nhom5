@@ -1,0 +1,72 @@
+<h1 id="tableLabel">TÁC GIẢ</h1>
+
+<p *ngIf="!tacgias"><em>Loading...</em></p>
+<button class="btn btn-primary" (click)="openModal(true,null)">Tạo tác giả mới</button>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="tacgias.totalRecord>0">
+  <thead>
+    <tr>
+      <th>Mã Tác Giả</th>
+      <th>Tên Tác Giả</th>
+      <th>Ghi Chú</th>
+      <th>Hành Động</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let tg of tacgias.data; index as i;">
+      <td>{{ tg.maTg }}</td>
+      <td>{{ tg.tenTg }}</td>
+      <td>{{ tg.ghiChu }}</td>
+     <td>
+        <button class="btn btn-info btn-sm" (click)="openModal(false,i)">Sửa</button>
+        <button class="btn btn-danger btn-sm" (click)="deleteTacgia(i)">Xóa</button>
+     </td>
+    </tr>
+  </tbody>
+</table>
+<ul class="pagination">
+    <li class="page-item">
+        <a class="page-link" href="javascript:void(0);" (click)="searchPrevious()">Trước</a>
+    </li>
+    
+    <li class="page-item"><a class="page-link">{{tacgias.page}}</a></li>
+   
+    <li class="page-item">
+        <a class="page-link" href="javascript:void(0);" (click)="searchNext()">Sau</a>
+    </li>
+</ul> 
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" *ngIf="!isEdit" id="exampleModalLabel">Tạo tác giả mới</h5>
+          <h5 class="modal-title" *ngIf="isEdit" id="exampleModalLabel">Sửa thông tin tác giả</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        <div class= "row" *ngIf="isEdit">
+            <div class="col-4">Mã Tác Giả</div>
+            <div class="col-8"><input class="form-control" [(ngModel)]="tacgia.maTg"></div>
+        </div>
+        <br/>
+        <div class= "row">
+            <div class="col-4">Tên Tác Giả</div>
+            <div class="col-8"><input class="form-control" [(ngModel)]="tacgia.tenTg"></div>
+        </div>
+        <br/>
+        <div class= "row">
+            <div class="col-4">Ghi Chú</div>
+            <div class="col-8"><input class="form-control" type="text" [(ngModel)]="tacgia.ghiChu"></div>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+          <button type="button" class="btn btn-primary" (click)="updateTacgia()">Lưu</button>
+          <button type="button" class="btn btn-success" (click)="addTacgia()">Tạo</button>
+        </div>
+      </div>
+    </div>
+  </div>
